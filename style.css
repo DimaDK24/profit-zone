@@ -1322,7 +1322,7 @@ iframe {
   right: -70px;
 }
 .block7 {
-  background: url(//profit-zone.com/wp-content/themes/profitzone/images/bgblock7.png)
+  background: url('./images/summer-very-min-lossy.jpg')
     no-repeat;
   background-size: cover;
 }
