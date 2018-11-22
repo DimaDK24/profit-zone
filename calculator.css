@@ -59,6 +59,7 @@
 }
 
 .smartphone form .lbl-radio {
+  cursor: pointer;
   font-size: 18px;
   font-family: "El Messiri";
   color: #000;
