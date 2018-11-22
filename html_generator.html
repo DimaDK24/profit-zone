@@ -9,7 +9,7 @@
     <link
       type="text/css"
       media="all"
-      href="calculator.css"
+      href="html_generator.css"
       rel="stylesheet"
     />
     <title></title>
@@ -203,30 +203,33 @@
       href="https://profit-zone.com/wp-includes/wlwmanifest.xml"
     />
     <meta name="generator" content="WordPress 4.9.8" />
-    <link rel="canonical" href="https://profit-zone.com/kalkulyator/" />
-    <link rel="shortlink" href="https://profit-zone.com/?p=293" />
+    <link rel="canonical" href="https://profit-zone.com/html-generator/" />
+    <link rel="shortlink" href="https://profit-zone.com/?p=291" />
     <link
       rel="alternate"
       type="application/json+oembed"
-      href="https://profit-zone.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprofit-zone.com%2Fkalkulyator%2F"
+      href="https://profit-zone.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprofit-zone.com%2Fhtml-generator%2F"
     />
     <link
       rel="alternate"
       type="text/xml+oembed"
-      href="https://profit-zone.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprofit-zone.com%2Fkalkulyator%2F&amp;format=xml"
+      href="https://profit-zone.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprofit-zone.com%2Fhtml-generator%2F&amp;format=xml"
     />
     <meta property="og:locale" content="ru_RU" />
     <meta property="og:site_name" content="Profit Zone" />
-    <meta property="og:title" content="калькулятор" />
-    <meta property="og:url" content="https://profit-zone.com/kalkulyator/" />
+    <meta property="og:title" content="html-генератор" />
+    <meta property="og:url" content="https://profit-zone.com/html-generator/" />
     <meta property="og:type" content="article" />
     <meta property="og:description" content="Ещё один сайт на WordPress" />
-    <meta itemprop="name" content="калькулятор" />
-    <meta itemprop="headline" content="калькулятор" />
+    <meta itemprop="name" content="html-генератор" />
+    <meta itemprop="headline" content="html-генератор" />
     <meta itemprop="description" content="Ещё один сайт на WordPress" />
     <meta itemprop="author" content="webmaster" />
-    <meta name="twitter:title" content="калькулятор" />
-    <meta name="twitter:url" content="https://profit-zone.com/kalkulyator/" />
+    <meta name="twitter:title" content="html-генератор" />
+    <meta
+      name="twitter:url"
+      content="https://profit-zone.com/html-generator/"
+    />
     <meta name="twitter:description" content="Ещё один сайт на WordPress" />
     <meta name="twitter:card" content="summary_large_image" />
     <script>
@@ -295,8 +298,8 @@
                   class="titlebl1"
                   style="padding-bottom: 0px; margin-top: 50px;"
                 >
-                  Обучение книжному бизнесу<br />
-                  на Amazon
+                  Amazon Book Description Generator<br />
+                  Генератор HTML кода для описания книги
                 </p>
               </div>
             </div>
@@ -307,9 +310,9 @@
                 <a
                   id="link11"
                   class="bigbuton slowscrol"
-                  href="https://profit-zone.com/"
+                  href="https://profit-zone.com/index.php#zayavkalearn"
                   style="margin-top: 44px; margin-bottom: 72px;"
-                  ><span>РЕДАКТИРУЕМЫЙ ТЕКСТ</span></a
+                  ><span>Подать заявку на обучение</span></a
                 >
               </div>
             </div>
@@ -318,111 +321,287 @@
         <div class="blockmous"></div>
       </section>
       <br /><br />
-      <div class="smartphone" id="calc">
-        <div class="wrap-logo-calc">
-          <img
-            src="https://profit-zone.com/wp-content/uploads/2018/11/logo.png"
-            width="15%"
-          />
-          <p>Profit<span>Zone</span></p>
-        </div>
-        <form>
-          <input
-            id="ebook"
-            class="rbt"
-            checked="checked"
-            name="book"
-            type="radio"
-          />
-          <label id="lbl-ebook" class="lbl-radio" for="ebook">
-            Kindle book
-          </label>
-          <input id="paperbook" class="rbt" name="book" type="radio" />
-          <label id="lbl-paperbook" class="lbl-radio" for="paperbook">
-            Paperback book
-          </label>
-          <div class="slogan">
-            Введи рейтинг книги и узнай сколько книг продает автор
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="wrapper-generator">
+              <div class="logo">
+                <div class="wrap-logo">
+                  <img
+                    src="https://profit-zone.com/wp-content/uploads/2018/11/logo.png"
+                    width="50%"
+                  />
+                  <p>Profit<span>Zone</span></p>
+                </div>
+              </div>
+              <div class="wrap-first-block">
+                <div class="instruction">
+                  <p><span>Инструкция:</span></p>
+                  <p>
+                    Напишите описание своей книги ниже. Затем выделите необходимый
+                    текст и нажмите кнопки, чтобы описание отображалось так, как
+                    вам необходимо. По завершении нажмите «Сгенерировать мой код».
+                    Скопируйте и вставьте код в раздел описания KDP книги.
+                  </p>
+                  <p></p>
+                </div>
+                <div class="style-structure">
+                  <h2><span>Стиль и структура</span></h2>
+                  <a href="javascript:void(0)" id="bold" onclick="setBold()">
+                    <span class="img-button" id="img-bold"
+                      ><i class="fa fa-bold" aria-hidden="true"></i
+                    ></span>
+                    <span class="text-button">Полужирный</span>
+                  </a>
+                  <a href="javascript:void(0)" id="italic" onclick="setItalic()">
+                    <span class="img-button" id="img-italic"
+                      ><i class="fa fa-italic" aria-hidden="true"></i
+                    ></span>
+                    <span class="text-button">Курсив</span>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    id="underline"
+                    onclick="setUnderline()"
+                  >
+                    <span class="img-button" id="img-underline"
+                      ><i class="fa fa-underline" aria-hidden="true"></i
+                    ></span>
+                    <span class="text-button">Подчеркнутый</span>
+                  </a>
+                  <a href="javascript:void(0)" id="strike" onclick="setStrike()">
+                    <span class="img-button" id="img-strike"
+                      ><i class="fa fa-strikethrough" aria-hidden="true"></i
+                    ></span>
+                    <span class="text-button">Зачеркнутый</span>
+                  </a>
+                  <a href="javascript:void(0)" id="subscript" onclick="setSub()">
+                    <span class="img-button" id="img-subscript"
+                      ><i class="fa fa-subscript" aria-hidden="true"></i
+                    ></span>
+                    <span class="text-button">Подстрочный</span>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    id="superscript"
+                    onclick="setSup()"
+                  >
+                    <span class="img-button" id="img-superscript"
+                      ><i class="fa fa-superscript" aria-hidden="true"></i
+                    ></span>
+                    <span class="text-button">Надстрочный</span>
+                  </a>
+                  <a href="javascript:void(0)" id="hr" onclick="insertHr()">
+                    <span class="img-button" id="img-hr"
+                      ><i class="fa fa-minus" aria-hidden="true"></i
+                    ></span>
+                    <span class="text-button">Горизонтальная<br />линия</span>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    id="ordered-list"
+                    onclick="insertOrderedList()"
+                  >
+                    <span class="img-button" id="img-ordered-list"
+                      ><i class="fa fa-list-ol" aria-hidden="true"></i
+                    ></span>
+                    <span class="text-button">Нумерованный<br />список</span>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    id="unordered-list"
+                    onclick="insertUnorderedList()"
+                  >
+                    <span class="img-button" id="img-unordered-list"
+                      ><i class="fa fa-list-ul" aria-hidden="true"></i
+                    ></span>
+                    <span class="text-button">Маркерованный<br />список</span>
+                  </a>
+                  <h2><span>Размер шрифта</span></h2>
+                  <a
+                    href="javascript:void(0)"
+                    class="font-size"
+                    id="h1"
+                    onclick="setH1()"
+                  >
+                    <span class="text-button">Этот размер</span>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="font-size"
+                    id="h2"
+                    onclick="setH2()"
+                  >
+                    <span class="text-button">Этот размер</span>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="font-size"
+                    id="h3"
+                    onclick="setH3()"
+                  >
+                    <span class="text-button">Этот размер</span>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="font-size"
+                    id="h4"
+                    onclick="setH4()"
+                  >
+                    <span class="text-button">Этот размер</span>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="font-size"
+                    id="normal"
+                    onclick="setNormal()"
+                  >
+                    <span class="text-button">Обычный</span>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="font-size"
+                    id="h5"
+                    onclick="setH5()"
+                  >
+                    <span class="text-button">Этот размер</span>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="font-size"
+                    id="h6"
+                    onclick="setH6()"
+                  >
+                    <span class="text-button">Этот размер</span>
+                  </a>
+                </div>
+              </div>
+              <div class="wrap-second-block">
+                <div class="description">
+                  <form>
+                    <div id="hiddenDiv" onclick="hideMe()">
+                      Введите ваше описание здесь...
+                    </div>
+                    <input type="hidden" id="content" name="content" value="" />
+                    <script type="text/javascript">
+                      document.write(
+                        "<iframe src='#' id='frameId' name='frameId' style='width: 100% !important; height: 250px !important; padding: 5px; border: 1px solid rgb(169, 169, 169); background-color: #fff;'> </iframe>"
+                      ); // Добавляем iframe
+                      /* В зависимости от браузера получаем доступ к созданному фрейму */
+                      var isGecko =
+                        navigator.userAgent.toLowerCase().indexOf("gecko") != -1;
+                      var iframe = isGecko
+                        ? document.getElementById("frameId")
+                        : frames["frameId"];
+                      var iWin = isGecko ? iframe.contentWindow : iframe.window;
+                      var iDoc = isGecko
+                        ? iframe.contentDocument
+                        : iframe.document;
+                      /* Создаём код пустой HTML-страницы */
+                      var iHTML =
+                        "<html><head></head><body data-rsssl=1 onpaste='" +
+                        "var _onPaste_StripFormatting_IEPaste = false;" +
+                        "if (event.originalEvent && e.originalEvent.clipboardData &&" +
+                        "event.originalEvent.clipboardData.getData) {" +
+                        "event.preventDefault();" +
+                        'var text = event.originalEvent.clipboardData.getData("text/plain");' +
+                        'window.document.execCommand("insertText", false, text);' +
+                        "}" +
+                        "else if (event.clipboardData && event.clipboardData.getData) {" +
+                        "event.preventDefault();" +
+                        'var text = event.clipboardData.getData("text/plain");' +
+                        'window.document.execCommand("insertText", false, text);' +
+                        "}" +
+                        "else if (window.clipboardData && window.clipboardData.getData) {" +
+                        "if (!_onPaste_StripFormatting_IEPaste) {" +
+                        "_onPaste_StripFormatting_IEPaste = true;" +
+                        "event.preventDefault();" +
+                        'window.document.execCommand("ms-pasteTextOnly", false);' +
+                        "}" +
+                        "_onPaste_StripFormatting_IEPaste = false;" +
+                        "}" +
+                        "'></body></html>";
+                      iDoc.open(); // Открываем фрейм
+                      iDoc.write(iHTML); // Добавляем написанный код в фрейм
+                      iDoc.close(); // Закрываем фрейм
+                      iDoc.designMode = "on";</script // Включаем режим редактирования фрейма
+                    ><iframe
+                      src="#"
+                      id="frameId"
+                      name="frameId"
+                      style="width: 100% !important; height: 250px !important; padding: 5px; border: 1px solid rgb(169, 169, 169); background-color: #fff;"
+                    >
+                    </iframe>
+                    <div id="forCharCount">
+                      <span id="charCount">4000</span> символов осталось
+                    </div>
+                    <input
+                      type="button"
+                      id="generate"
+                      onclick="save()"
+                      value="Сгенерировать мой код"
+                    />
+                  </form>
+                </div>
+                <div class="code">
+                  <form><textarea id="result-code"></textarea></form>
+                </div>
+              </div>
+            </div>
           </div>
-          <input id="rating" type="text" /> <br />
-          <input
-            id="btn"
-            type="button"
-            onclick="getQuantity()"
-            value="Рассчитать"
-          />
-          <br />
-          <input id="quantity" type="text" />
-        </form>
+        </div>
       </div>
       <div class="container">
         <div class="row">
           <div class="col-xs-12" style="color: #fff;">
-            <p class="text-justify">
-              <span style="font-size: 18pt; color: #ededed;"
-                >Равным образом рамки и место обучения кадров влечет за собой
-                процесс внедрения и модернизации системы обучения кадров,
-                соответствует насущным потребностям. Равным образом начало
-                повседневной работы по формированию позиции в значительной степени
-                обуславливает создание позиций, занимаемых участниками в отношении
-                поставленных задач. Не следует, однако забывать, что рамки и место
-                обучения кадров требуют определения и уточнения дальнейших
-                направлений развития. Не следует, однако забывать, что укрепление
-                и развитие структуры в значительной степени обуславливает создание
-                новых предложений. Товарищи! дальнейшее развитие различных форм
-                деятельности позволяет выполнять важные задания по разработке
-                дальнейших направлений развития. С другой стороны постоянный
-                количественный рост и сфера нашей активности способствует
-                подготовки и реализации систем массового участия.</span
-              >
+            <p>
+              Благодаря команде разработчиков Kindlepreneur мы создали генератор
+              описания книг, который может использовать любой пользователь, не
+              зная HTML. Вышеупомянутый Amazon Book Description Generator поможет
+              вам создать эти красивые описания всего за пару кликов кнопки.
             </p>
-            <p class="text-justify">
-              <span style="font-size: 18pt; color: #ededed;"
-                >Разнообразный и богатый опыт дальнейшее развитие различных форм
-                деятельности способствует подготовки и реализации новых
-                предложений. Товарищи! реализация намеченных плановых заданий
-                влечет за собой процесс внедрения и модернизации позиций,
-                занимаемых участниками в отношении поставленных задач.</span
-              >
-            </p>
-            <p class="text-justify">
-              <span style="font-size: 18pt; color: #ededed;"
-                >Не следует, однако забывать, что сложившаяся структура
-                организации способствует подготовки и реализации систем массового
-                участия. Таким образом сложившаяся структура организации
-                способствует подготовки и реализации систем массового участия.
-                Задача организации, в особенности же укрепление и развитие
-                структуры позволяет выполнять важные задания по разработке систем
-                массового участия. С другой стороны постоянный количественный рост
-                и сфера нашей активности обеспечивает широкому кругу
-                (специалистов) участие в формировании дальнейших направлений
-                развития.</span
-              >
-            </p>
-            <p class="text-justify">
-              <span style="font-size: 18pt; color: #ededed;"
-                >Не следует, однако забывать, что консультация с широким активом
-                обеспечивает широкому кругу (специалистов) участие в формировании
-                систем массового участия. Таким образом рамки и место обучения
-                кадров играет важную роль в формировании модели развития.
-                Товарищи! новая модель организационной деятельности позволяет
-                выполнять важные задания по разработке дальнейших направлений
-                развития. Равным образом дальнейшее развитие различных форм
-                деятельности позволяет оценить значение дальнейших направлений
-                развития.</span
-              >
-            </p>
-            <p class="text-justify">
-              <span style="font-size: 18pt; color: #ededed;"
-                >Разнообразный и богатый опыт начало повседневной работы по
-                формированию позиции требуют определения и уточнения форм
-                развития. Товарищи! постоянный количественный рост и сфера нашей
-                активности влечет за собой процесс внедрения и модернизации
-                существенных финансовых и административных условий. Таким образом
-                рамки и место обучения кадров играет важную роль в формировании
-                новых предложений.</span
-              >
-            </p>
+            <div class="section">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h1>Ваш шедевр готов!</h1>
+                    <p class="text-justify">
+                      Повседневная практика показывает, что новая модель
+                      организационной деятельности обеспечивает широкому кругу
+                      (специалистов) участие в формировании модели развития. С
+                      другой стороны укрепление и развитие структуры обеспечивает
+                      широкому кругу (специалистов) участие в формировании
+                      соответствующий условий активизации. Равным образом
+                      реализация намеченных плановых заданий способствует
+                      подготовки и реализации дальнейших направлений развития.
+                      Равным образом реализация намеченных плановых заданий
+                      представляет собой интересный эксперимент проверки
+                      дальнейших направлений развития. Повседневная практика
+                      показывает, что укрепление и развитие структуры требуют от
+                      нас анализа модели развития. Товарищи! реализация намеченных
+                      плановых заданий позволяет оценить значение позиций,
+                      занимаемых участниками в отношении поставленных задач.
+                    </p>
+                    <p class="text-justify">
+                      Задача организации, в особенности же постоянное
+                      информационно-пропагандистское обеспечение нашей
+                      деятельности представляет собой интересный эксперимент
+                      проверки системы обучения кадров, соответствует насущным
+                      потребностям. Не следует, однако забывать, что начало
+                      повседневной работы по формированию позиции в значительной
+                      степени обуславливает создание систем массового участия.
+                      Разнообразный и богатый опыт новая модель организационной
+                      деятельности влечет за собой процесс внедрения и
+                      модернизации существенных финансовых и административных
+                      условий. Повседневная практика показывает, что дальнейшее
+                      развитие различных форм деятельности влечет за собой процесс
+                      внедрения и модернизации позиций, занимаемых участниками в
+                      отношении поставленных задач.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -431,9 +610,9 @@
               <a
                 id="link11"
                 class="bigbuton"
-                href="https://profit-zone.com/html-generator"
+                href="https://profit-zone.com/kalkulyator/"
                 style="margin-top: 44px;"
-                ><span>Генератор описаний книги HTML</span></a
+                ><span>Калькулятор ABSR</span></a
               >
             </div>
           </div>
@@ -464,9 +643,11 @@
         </div>
       </footer>
       <script>
-        jQuery(document).ready(function($) {
-          $("html, body").animate({ scrollTop: $("#calc").offset().top }, "slow");
-        });
+        /*функция проверки количества символов */
+        setInterval(function() {
+          var charCount = iDoc.body.innerHTML.length;
+          document.getElementById("charCount").innerHTML = 4000 - charCount;
+        }, 0.5);
       </script>
       <script
         type="text/javascript"
@@ -1055,8 +1236,8 @@
         }
       );
     </script>
-    <!-- Dynamic page generated in 0.226 seconds. -->
-    <!-- Cached page generated by WP-Super-Cache on 2018-11-22 17:50:51 -->
+    <!-- Dynamic page generated in 0.248 seconds. -->
+    <!-- Cached page generated by WP-Super-Cache on 2018-11-22 17:49:11 -->
 
     <!-- super cache -->
     <script type="text/javascript" id="">
