@@ -113,6 +113,11 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.page-wrapper {
+  background-image: radial-gradient(circle 1272px at 37.2% 16.42%, #002c60 0%, #00001f 100%);
+}
+
 a {
   outline: 0px;
   line-height: 0;
