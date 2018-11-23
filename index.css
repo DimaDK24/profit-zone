@@ -102,6 +102,14 @@
   font-weight: 400;
   font-style: normal;
 }
+@keyframes menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   font-family: "El Messiri";
   color: rgba(255, 255, 255, 0.5);
@@ -164,17 +172,18 @@ a {
   );
 }
 .menu {
-  opacity: 0;
+  display: none;
   position: relative;
   margin-top: 15px;
   padding: 10px 15px;
   border-radius: 5px;
   background-color: #00163f;
-  transition-duration: 200ms;
+  animation-duration: 300ms;
+  animation-name: menu;
   border: 2px solid black;
 }
 .menu--active .menu {
-  opacity: 1;
+  display: block;
 }
 .menu > ul::before {
   content: '';
