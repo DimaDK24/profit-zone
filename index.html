@@ -1,5 +1,11 @@
 <html lang="ru">
   <head>
+    <link
+      type="text/css"
+      media="all"
+      href="hamburgers.min.css"
+      rel="stylesheet"
+    />
     <link type="text/css" media="all" href="index.css" rel="stylesheet" />
     <title>Книжный Бизнес на Amazon</title>
     <meta name="keywords" content="Ключи" />
@@ -272,6 +278,13 @@
                   >
                 </div>
               </div>
+              <div class="burger">
+                  <button class="hamburger hamburger--squeeze" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
+                </div>
             </div>
           </div>
           <div class="clearfix"></div>
@@ -2078,6 +2091,12 @@
         </div>
       </div>
     </div>
+    <script>
+      var hamburger = document.querySelector(".hamburger");
+      hamburger.addEventListener("click", function() {
+        hamburger.classList.toggle("is-active");
+      });
+    </script>
     <script
       type="text/javascript"
       src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
