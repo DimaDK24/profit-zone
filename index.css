@@ -2550,7 +2550,7 @@ section {
     margin-right: 70px;
   }
 }
-@media (max-width: 712px) {
+@media (max-width: 711px) {
   .deskmail {
     display: none;
   }
