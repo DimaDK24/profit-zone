@@ -278,13 +278,19 @@
                   >
                 </div>
               </div>
-              <div class="burger">
-                  <button class="hamburger hamburger--squeeze" type="button">
-                    <span class="hamburger-box">
-                      <span class="hamburger-inner"></span>
-                    </span>
-                  </button>
+              <div class="burger" id="burger">
+                <button class="hamburger hamburger--squeeze" type="button">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+                <div class="menu" id="menu">
+                  <ul>
+                    <li class="menu__item"><a href="html-generator/">Description генератор</a></li>
+                    <li class="menu__item"><a href="kalkulyator/">BSR Калькулятор</a></li>
+                  </ul>
                 </div>
+              </div>
             </div>
           </div>
           <div class="clearfix"></div>
@@ -2092,10 +2098,36 @@
       </div>
     </div>
     <script>
-      var hamburger = document.querySelector(".hamburger");
-      hamburger.addEventListener("click", function() {
-        hamburger.classList.toggle("is-active");
+      var hamburger = document.querySelector('.hamburger');
+      var menu = document.getElementById('menu');
+      var body = document.querySelector('html');
+      hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('is-active');
+        body.classList.toggle('menu--active');
       });
+      var menuInBurger = true;
+      var burger = document.getElementById('burger');
+      window.addEventListener('resize', onresize);
+      onresize();
+      function onresize(){
+        var mobileViewWidth = '711';
+        if (window.innerWidth <= mobileViewWidth){
+          if (menuInBurger) {
+            moveMenuOutOfBurger();
+            menuInBurger = false;
+          }
+        }
+        else {
+          moveMenuIntoBurger()
+          menuInBurger = true;
+        }
+      }
+      function moveMenuOutOfBurger() {
+        menu.parentNode.parentNode.appendChild(menu);
+      }
+      function moveMenuIntoBurger() {
+        burger.appendChild(menu);
+      }
     </script>
     <script
       type="text/javascript"
