@@ -2242,7 +2242,12 @@ section {
     zoom: 0.7;
   }
 }
-@media (max-width: 1180px) {
+@media (min-width: 1180px) {
+  .burger {
+    right: 150px;
+  }
+}
+@media (max-width: 1179px) {
   .container {
     zoom: 1;
   }
@@ -3391,9 +3396,6 @@ img {
 @media (min-width: 1180px) {
   .container {
     width: 1170px;
-  }
-  .burger {
-    right: 150px;
   }
 }
 @media (min-width: 1501px) and (max-width: 1800px) {
