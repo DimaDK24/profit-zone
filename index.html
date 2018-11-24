@@ -2106,18 +2106,18 @@
         body.classList.toggle('menu--active');
       });
       var menuInBurger = true;
+      var mobileViewWidth = '711';
       var burger = document.getElementById('burger');
       window.addEventListener('resize', onresize);
       onresize();
       function onresize(){
-        var mobileViewWidth = '711';
         if (window.innerWidth <= mobileViewWidth){
           if (menuInBurger) {
             moveMenuOutOfBurger();
             menuInBurger = false;
           }
         }
-        else {
+        else if (!menuInBurger) {
           moveMenuIntoBurger()
           menuInBurger = true;
         }
