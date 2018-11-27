@@ -210,7 +210,7 @@ a {
   color: #f3a758;
   text-decoration: none;
   line-height: initial;
-  font-family: "Open Sans";
+  font-family: "El Messiri", sans-serif;
   transition-duration: 150ms;
 }
 .menu__item > a:hover,
