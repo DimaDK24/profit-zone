@@ -2100,34 +2100,36 @@
     <script>
       (function () {
         var hamburger = document.querySelector('.hamburger');
-        var menu = document.getElementById('menu');
-        var body = document.querySelector('html');
-        hamburger.addEventListener('click', function() {
-          hamburger.classList.toggle('is-active');
-          body.classList.toggle('menu--active');
-        });
-        var menuInBurger = true;
-        var mobileViewWidth = '711';
-        var burger = document.getElementById('burger');
-        window.addEventListener('resize', onresize);
-        onresize();
-        function onresize(){
-          if (window.innerWidth <= mobileViewWidth){
-            if (menuInBurger) {
-              moveMenuOutOfBurger();
-              menuInBurger = false;
+        if(hamburger) {
+          var menu = document.getElementById('menu');
+          var body = document.querySelector('html');
+          hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('is-active');
+            body.classList.toggle('menu--active');
+          });
+          var menuInBurger = true;
+          var mobileViewWidth = '711';
+          var burger = document.getElementById('burger');
+          window.addEventListener('resize', onresize);
+          onresize();
+          function onresize(){
+            if (window.innerWidth <= mobileViewWidth){
+              if (menuInBurger) {
+                moveMenuOutOfBurger();
+                menuInBurger = false;
+              }
+            }
+            else if (!menuInBurger) {
+              moveMenuIntoBurger()
+              menuInBurger = true;
             }
           }
-          else if (!menuInBurger) {
-            moveMenuIntoBurger()
-            menuInBurger = true;
+          function moveMenuOutOfBurger() {
+            menu.parentNode.parentNode.appendChild(menu);
           }
-        }
-        function moveMenuOutOfBurger() {
-          menu.parentNode.parentNode.appendChild(menu);
-        }
-        function moveMenuIntoBurger() {
-          burger.appendChild(menu);
+          function moveMenuIntoBurger() {
+            burger.appendChild(menu);
+          }
         }
       })();
     </script>
