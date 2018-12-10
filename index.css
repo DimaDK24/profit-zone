@@ -2155,6 +2155,7 @@ section {
 }
 .padddd {
   padding-top: 60px;
+  display: none;
 }
 .blockcomplete .bl4title {
   margin-bottom: 20px;
@@ -2293,7 +2294,7 @@ section {
     z-index: 10;
     border-bottom: 0;
     right: 0;
-    position: relative;
+    position: fixed;
     background: 0 0;
   }
   .avtormail .link {
@@ -2637,6 +2638,9 @@ section {
   }
   .menu__item > a {
     text-align: center;
+  }
+  .fixedtop {
+    position: relative;
   }
   .deskmail {
     display: none;
