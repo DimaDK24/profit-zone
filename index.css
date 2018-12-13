@@ -2599,6 +2599,12 @@ section {
     );
   }
 }
+@media (min-width: 712px) and (max-width: 1179px) {
+  .fixedtop {
+    background-color: #002556;
+    background-image: radial-gradient(circle 3687px at 37.2% 20.73%, #002c60 0%, #00001f 100%);
+  }
+}
 @media (max-width: 1000px) {
   .burger {
     right: 25px;
