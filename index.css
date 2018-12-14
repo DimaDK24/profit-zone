@@ -2269,6 +2269,7 @@ section {
     top: -280px;
     right: auto;
     left: 80px;
+    display:none;
   }
   .imgsendavtor img {
     top: calc(50% - 63px);
